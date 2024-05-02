@@ -27,6 +27,6 @@ jobs:
       # mongodb-version: ${{matrix.mongodb-version}}
       - run: npm install
       - run: npm install react-scripts --prefix client
-      - run: npm install jest --prefix server --save-dev
+      # - run: npm install jest --prefix server --save-dev
       - run: npm run build --prefix client
       - run: npm test
